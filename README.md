@@ -11,7 +11,8 @@ Thanks to realfavicongenerator.net also.
 
 Todo:
 - Update dependencies
+- start using gulp or webpack
 - make login system work better
 - make desktop version better (it doesn't have all the tools the mobile does)
 - change the li/item moving and ordering thing better (it uses this https://github.com/RubaXa/Sortable and i have to make better one)
-- fix all the bugs.
+- fix all the bugs. (:D)
