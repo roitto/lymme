@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    title="lymme - Error"
+    style
+      include style.css
+  body
+    block content
+      div(id='shopListHeader')
+        h1 lymme
+      div(id='frontArticle' style='text-align:center')
+        h1 Login
+        p Please enter your username and password to log in!
+        form(method='POST' action='/login')
+          div(style='text-align:center;')
+            input(type='email', placeholder='Email' name='loginmail' style='display:block;margin:0 auto;margin-bottom:0.6em;')
+            input(type='password', placeholder='password' name='loginpass' style='display:block;margin:0 auto;margin-bottom:0.6em;')
+            button(type='submit') Login
+        a(href='/') 
+          button Return to main page

@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    include head.pug
+    title="lymme - simple list creator"
+  body
+    block content
+    div(id='frontHeader')
+      span(class='logoIcon')
+    div(id='frontArticle')
+      h1 Global statistics
+      ul(id='frontStats')
+        li 
+          span(class='statsBig') #{statsLists} 
+          span(class='statsText') lists made. 
+        li 
+          span(class='statsBig') #{statsItems} 
+          span(class='statsText') items added.
+      div(style='text-align:center')
+        a(href='/') 
+          button Return to main page
+
+    div(id='frontFooter')
+      p 
+        a(href='/about') About
+        span | 
+        a(href='/help') Help
+        span | 
+        a(href='/stats') Statistics
+        span | 
+        a © 2017 Pertti Roitto

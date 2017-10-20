@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    include head.pug
+    title="lymme - simple list creator"
+  body
+    block content
+    div(id='frontHeader')
+      span(class='logoIcon')
+    div
+      div(id='frontArticle')
+        h1 Hello friend!
+        p lymme is awesome small and simple list application, which allows you to create lists collaboratively and share them with your friends, colleagues and family.
+        form(method='POST' action='/create')
+          div(style='text-align:center;')
+            input(type='text', placeholder='Name for you list' name='name')
+            button(type='submit') Create!
+            if logged
+              p #{logged}
+            else
+              p Old user? Please  
+                a(href='/login') login
+    div(id='frontFooter')
+      p 
+        a(href='/about') About
+        span | 
+        a(href='/help') Help
+        span | 
+        a(href='/stats') Statistics
+        span | 
+        a © 2017 Pertti Roitto

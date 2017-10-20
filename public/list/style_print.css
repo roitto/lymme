@@ -1,0 +1,81 @@
+@page {
+    size: A4;
+}
+/*
+body {
+    font-size: 1em;
+    list-style-type: none;
+    font-family: verdana;
+}
+*/
+#shopListItems {
+    list-style-type: none;
+    padding: 0px;
+}
+/*
+#shopListItems li {
+    display: flex;
+    padding:0.3em;
+        border: 1px solid #a9a1a1;
+}
+#shopListItems li:nth-child(2) {
+background-color: #dedede;
+	}
+
+.lst-left {
+    padding-right: 1em;
+}
+*/
+/*
+#shoplistInfo {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+}
+
+#shoplistInfo span {
+	padding-left:2em;
+	padding-right:2em;
+}*/
+
+@media print /*--This is for Print--*/
+{
+#shopListItems {
+    list-style-type: none;
+    padding: 0px;
+}
+#shopListItems li {
+    display: flex;
+    padding:0.3em;
+        border: 1px solid #a9a1a1;
+}
+#shopListItems li:nth-child(2) {
+background-color: #dedede;
+	}
+
+.lst-left {
+    padding-right: 1em;
+}
+   
+}
+@media screen /*--This is for Print Preview Screen--*/
+{
+#shopListItems {
+    list-style-type: none;
+    padding: 0px;
+}
+#shopListItems li {
+    display: flex;
+    padding:0.3em;
+        border: 1px solid #a9a1a1;
+}
+#shopListItems li:nth-child(2) {
+background-color: #dedede;
+	}
+
+.lst-left {
+    padding-right: 1em;
+}
+}

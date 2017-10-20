@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    include head.pug
+    title= title
+    script(src='https://localhost/socket.io/socket.io.js')
+    script(src='https://use.fontawesome.com/afe591783a.js')
+    script
+      include /js/lymme.js
+      include /js/Sortable.min.js
+    script.
+      setRoom("#{shoplistCode}")
+  body
+    block content
+      div(id='shopListHeader')
+        a(href='/')
+          img(src='/list/icons/uusi_icon_favicon.svg' class='logoIconSimple')
+      div(id='shoplistWrapper')
+        ul(id='shopListItems')
+        div(id='shopListAdder')
+          textarea(id="shoplistValue" placeholder="Add items from here.. Double tap items to edit them.." maxlength="256")
+        div(id='shoplistInfo') 
+          span(id='shopListName')= shoplistName 
+          span(id='shopListDate')= shoplistDate
+      div(id='shopListMobileMenu')
+          div(class='MobileMenuButton' id='openAdder')
+            span(class='fa fa-pencil-square-o lst-button')
+          div(class='MobileMenuButton' id='openMenu')
+            span(class='fa fa-bars lst-button')

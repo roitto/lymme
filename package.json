@@ -1,0 +1,24 @@
+{
+  "name": "lymmelist",
+  "version": "0.0.2",
+  "description": "Shopping list app",
+  "main": "server.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roitto/lymme.git"
+  },
+  "keywords": [
+    "shopping",
+    "list",
+    "lymme"
+  ],
+  "author": "pertti roitto",
+  "license": "ISC",
+  "homepage": "https://github.com/roitto/lymme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
